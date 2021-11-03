@@ -1,0 +1,26 @@
+.float-container{
+    padding: 20px;
+}
+
+.float-child{
+    width: 287px;
+    height: 264px;
+    float: left;
+    padding: 10px;
+}
+
+.add-btn{
+    width: 287px;
+    height: 264px;
+    float: left;
+}
+
+.info{
+    color: lightgray;
+}
+
+body{
+    padding-bottom: 45%;
+}
+
+

@@ -1,0 +1,31 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/editor.css">
+</head>
+
+<body class="bg-dark">
+    <script src="../editor.js"></script>
+    <editor>
+        <div class="modal" id="nameModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">please enter a name</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="nameInput" placeholder="enter name">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" onclick="$('#nameModal').hide()">close</button>
+                        <button type="button" class="btn btn-primary" onClick="changeName()">save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <textarea id="text-area"></textarea>
+    </editor>
+</body>
